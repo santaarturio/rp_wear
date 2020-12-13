@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Qc-9u-Jgx">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Оформление заказа-->
+        <scene sceneID="xIF-67-jNr">
+            <objects>
+                <tableViewController storyboardIdentifier="ANCheckoutTableViewController" id="4Qc-9u-Jgx" customClass="ANCheckoutTableViewController" customModule="RP_Wear_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="12" sectionFooterHeight="18" id="rWI-5u-f71" customClass="TPKeyboardAvoidingTableView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Введите Ваши данные" id="9e9-7N-fph">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="ID1-WB-X7E">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ID1-WB-X7E" id="2NQ-L8-Zmx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="*имя и фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FRy-al-U9z">
+                                                    <rect key="frame" x="20" y="8" width="335" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="4Qc-9u-Jgx" id="Ju3-bn-tNZ"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="FRy-al-U9z" secondAttribute="trailing" constant="20" symbolic="YES" id="Afm-Xa-127"/>
+                                                <constraint firstAttribute="bottom" secondItem="FRy-al-U9z" secondAttribute="bottom" constant="8" id="LG4-qX-nd6"/>
+                                                <constraint firstItem="FRy-al-U9z" firstAttribute="top" secondItem="2NQ-L8-Zmx" secondAttribute="top" constant="8" id="jQW-QH-htU"/>
+                                                <constraint firstItem="FRy-al-U9z" firstAttribute="leading" secondItem="2NQ-L8-Zmx" secondAttribute="leading" constant="20" symbolic="YES" id="jXu-EL-idP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="H0y-VJ-MHA">
+                                        <rect key="frame" x="0.0" y="105.5" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H0y-VJ-MHA" id="uGC-9T-2b1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="*номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="btW-Ap-5XX">
+                                                    <rect key="frame" x="20" y="8" width="335" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="4Qc-9u-Jgx" id="pkF-hw-Ucy"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="btW-Ap-5XX" secondAttribute="trailing" constant="20" symbolic="YES" id="4ch-Vd-TA1"/>
+                                                <constraint firstItem="btW-Ap-5XX" firstAttribute="leading" secondItem="uGC-9T-2b1" secondAttribute="leading" constant="20" symbolic="YES" id="dzf-NU-uS5"/>
+                                                <constraint firstAttribute="bottom" secondItem="btW-Ap-5XX" secondAttribute="bottom" constant="8" id="pXx-dm-bN1"/>
+                                                <constraint firstItem="btW-Ap-5XX" firstAttribute="top" secondItem="uGC-9T-2b1" secondAttribute="top" constant="8" id="pcm-5L-5xc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="QOc-cf-MY5">
+                                        <rect key="frame" x="0.0" y="155.5" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QOc-cf-MY5" id="M0F-Jx-yOy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="*город" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezT-mL-L2Y">
+                                                    <rect key="frame" x="20" y="8" width="335" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="4Qc-9u-Jgx" id="EUL-wl-IYg"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ezT-mL-L2Y" secondAttribute="trailing" constant="20" symbolic="YES" id="2M6-W4-SC3"/>
+                                                <constraint firstAttribute="bottom" secondItem="ezT-mL-L2Y" secondAttribute="bottom" constant="8" id="Xxr-nE-w1O"/>
+                                                <constraint firstItem="ezT-mL-L2Y" firstAttribute="top" secondItem="M0F-Jx-yOy" secondAttribute="top" constant="8" id="b0g-NK-qTZ"/>
+                                                <constraint firstItem="ezT-mL-L2Y" firstAttribute="leading" secondItem="M0F-Jx-yOy" secondAttribute="leading" constant="20" symbolic="YES" id="vCZ-Pv-aO1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="lD7-FD-r2m">
+                                        <rect key="frame" x="0.0" y="205.5" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lD7-FD-r2m" id="tWQ-ry-ONa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="*номер отделения Новой Почты" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-Hk-8FS">
+                                                    <rect key="frame" x="20" y="8" width="335" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="4Qc-9u-Jgx" id="TxT-RB-25h"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dzh-Hk-8FS" firstAttribute="leading" secondItem="tWQ-ry-ONa" secondAttribute="leading" constant="20" symbolic="YES" id="PDz-zB-gcy"/>
+                                                <constraint firstAttribute="trailing" secondItem="dzh-Hk-8FS" secondAttribute="trailing" constant="20" symbolic="YES" id="Slu-pf-hPA"/>
+                                                <constraint firstItem="dzh-Hk-8FS" firstAttribute="top" secondItem="tWQ-ry-ONa" secondAttribute="top" constant="8" id="nS5-Bo-jjW"/>
+                                                <constraint firstAttribute="bottom" secondItem="dzh-Hk-8FS" secondAttribute="bottom" constant="8" id="xjh-Re-Zjr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="EEQ-tC-NwR">
+                                        <rect key="frame" x="0.0" y="255.5" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EEQ-tC-NwR" id="KCu-Rn-9iD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Позвонить для подтверждения заказа?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNX-bd-VLV">
+                                                    <rect key="frame" x="20" y="8" width="231.5" height="34"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2tf-UR-2Ic">
+                                                    <rect key="frame" x="259.5" y="9.5" width="95.5" height="32"/>
+                                                    <segments>
+                                                        <segment title="Да"/>
+                                                        <segment title="Нет"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VNX-bd-VLV" firstAttribute="leading" secondItem="KCu-Rn-9iD" secondAttribute="leading" constant="20" symbolic="YES" id="Usa-Sq-THi"/>
+                                                <constraint firstItem="2tf-UR-2Ic" firstAttribute="leading" secondItem="VNX-bd-VLV" secondAttribute="trailing" constant="8" id="c5D-09-cRC"/>
+                                                <constraint firstItem="2tf-UR-2Ic" firstAttribute="centerY" secondItem="KCu-Rn-9iD" secondAttribute="centerY" id="do1-j4-nyt"/>
+                                                <constraint firstItem="VNX-bd-VLV" firstAttribute="top" secondItem="KCu-Rn-9iD" secondAttribute="top" constant="8" id="dsx-lV-hPT"/>
+                                                <constraint firstAttribute="bottom" secondItem="VNX-bd-VLV" secondAttribute="bottom" constant="8" id="nVT-FH-vsq"/>
+                                                <constraint firstAttribute="trailing" secondItem="2tf-UR-2Ic" secondAttribute="trailing" constant="20" symbolic="YES" id="v7q-2n-Fo0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="cgH-p5-iKS">
+                                        <rect key="frame" x="0.0" y="305.5" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cgH-p5-iKS" id="MTN-WG-Ztu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpj-jI-y8t" customClass="ANButton" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="12" width="335" height="60"/>
+                                                    <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="gfx-rh-RXg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Заказать">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <state key="disabled">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <state key="selected">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="makeOrderButtonTapped:" destination="4Qc-9u-Jgx" eventType="touchUpInside" id="fyd-Za-zwZ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Hpj-jI-y8t" secondAttribute="trailing" constant="20" symbolic="YES" id="56q-3c-5qq"/>
+                                                <constraint firstItem="Hpj-jI-y8t" firstAttribute="leading" secondItem="MTN-WG-Ztu" secondAttribute="leading" constant="20" symbolic="YES" id="Xq5-pP-Aid"/>
+                                                <constraint firstAttribute="bottom" secondItem="Hpj-jI-y8t" secondAttribute="bottom" constant="8" id="wUA-GY-Zvd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="4Qc-9u-Jgx" id="9bh-hr-jr2"/>
+                            <outlet property="delegate" destination="4Qc-9u-Jgx" id="dfV-gf-hMk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Оформление заказа" id="WX1-MI-sMU"/>
+                    <connections>
+                        <outlet property="callOrNotSegment" destination="2tf-UR-2Ic" id="9Lx-To-4AK"/>
+                        <outlet property="cityTextField" destination="ezT-mL-L2Y" id="v9T-fH-het"/>
+                        <outlet property="makeOrderButton" destination="Hpj-jI-y8t" id="a4G-RH-Ose"/>
+                        <outlet property="nameTextField" destination="FRy-al-U9z" id="jjN-TP-kE9"/>
+                        <outlet property="phoneNumberTextField" destination="btW-Ap-5XX" id="Lam-9o-O9X"/>
+                        <outlet property="postNumberTextField" destination="dzh-Hk-8FS" id="s2X-v8-d4k"/>
+                        <outletCollection property="textFields" destination="FRy-al-U9z" collectionClass="NSMutableArray" id="XYE-0f-kcR"/>
+                        <outletCollection property="textFields" destination="btW-Ap-5XX" collectionClass="NSMutableArray" id="fdd-sN-7MF"/>
+                        <outletCollection property="textFields" destination="ezT-mL-L2Y" collectionClass="NSMutableArray" id="TZq-Vc-uj6"/>
+                        <outletCollection property="textFields" destination="dzh-Hk-8FS" collectionClass="NSMutableArray" id="Gxj-eV-hSk"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZl-gH-ccm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="147.99107142857142"/>
+        </scene>
+    </scenes>
+</document>

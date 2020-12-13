@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MAR-B7-01I">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RP Дом-->
+        <scene sceneID="HwT-mN-ZiH">
+            <objects>
+                <navigationController interfaceStyle="light" hidesBarsOnSwipe="YES" id="MAR-B7-01I" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="RP Дом" image="TabBarHome" selectedImage="TabBarHome" springLoaded="YES" id="c5Z-jh-TQI"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iy9-Yr-8bQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AKJ-Ss-fRx" kind="relationship" relationship="rootViewController" id="Fmc-po-OKg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPH-Gy-lbq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-538" y="9"/>
+        </scene>
+        <!--RP Дом-->
+        <scene sceneID="Usy-iZ-HG0">
+            <objects>
+                <viewController storyboardIdentifier="ANHomeViewController" id="AKJ-Ss-fRx" customClass="ANHomeViewController" customModule="RP_Wear_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PF8-xL-CIs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2a-aa-XHU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="N90-H2-xKv">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2415"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnt-fq-bz2">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="700" id="O3G-iC-Hpa"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTX-Md-uym">
+                                                <rect key="frame" x="0.0" y="725" width="414" height="260"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="LSS-Y9-g9k">
+                                                        <rect key="frame" x="145" y="0.0" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="z5l-1g-uBO"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Wear" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywY-Ql-fjv">
+                                                        <rect key="frame" x="199" y="0.0" width="207" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="Qhl-0y-X0G"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vq-1l-yyO">
+                                                        <rect key="frame" x="8" y="80" width="398" height="86"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="  Как говорят наши довольные покупатели: &quot;Это лучше, чем картины по номерам!&quot;">
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="system" size="18"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gm-cF-JBL">
+                                                        <rect key="frame" x="8" y="166" width="398" height="86"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Наша цель - дать возможность каждому воплотить свои самые смелые творческие мечты, тем самым, чуточку помогая нашей планете ">
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="system" size="18"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="🌎">
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="system" size="18"/>
+                                                                    <font key="NSOriginalFont" metaFont="system" size="18"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="– новый украинский бренд" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1W-Hy-iDa">
+                                                        <rect key="frame" x="8" y="52" width="398" height="24"/>
+                                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="2Gm-cF-JBL" secondAttribute="bottom" constant="8" id="1Tf-6h-Qhd"/>
+                                                    <constraint firstAttribute="height" constant="260" id="339-dq-JVt"/>
+                                                    <constraint firstItem="ywY-Ql-fjv" firstAttribute="leading" secondItem="LSS-Y9-g9k" secondAttribute="trailing" constant="-6" id="8iY-np-OhA"/>
+                                                    <constraint firstItem="8vq-1l-yyO" firstAttribute="leading" secondItem="aTX-Md-uym" secondAttribute="leading" constant="8" id="AFk-aQ-PTK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8vq-1l-yyO" secondAttribute="trailing" constant="8" id="Bui-sD-PKM"/>
+                                                    <constraint firstItem="8vq-1l-yyO" firstAttribute="height" secondItem="2Gm-cF-JBL" secondAttribute="height" id="M6B-nP-jls"/>
+                                                    <constraint firstAttribute="trailing" secondItem="X1W-Hy-iDa" secondAttribute="trailing" constant="8" id="PDn-54-pZT"/>
+                                                    <constraint firstItem="X1W-Hy-iDa" firstAttribute="top" secondItem="LSS-Y9-g9k" secondAttribute="bottom" constant="-8" id="PZY-kl-hHU"/>
+                                                    <constraint firstItem="ywY-Ql-fjv" firstAttribute="width" secondItem="aTX-Md-uym" secondAttribute="width" multiplier="0.5" id="QWz-7O-kXq"/>
+                                                    <constraint firstItem="ywY-Ql-fjv" firstAttribute="top" secondItem="aTX-Md-uym" secondAttribute="top" id="TaQ-xm-1NC"/>
+                                                    <constraint firstItem="X1W-Hy-iDa" firstAttribute="height" secondItem="ywY-Ql-fjv" secondAttribute="height" multiplier="0.4" id="UBS-4H-trk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2Gm-cF-JBL" secondAttribute="trailing" constant="8" id="bq7-RQ-Rbb"/>
+                                                    <constraint firstItem="LSS-Y9-g9k" firstAttribute="top" secondItem="aTX-Md-uym" secondAttribute="top" id="dUg-pD-vMK"/>
+                                                    <constraint firstItem="2Gm-cF-JBL" firstAttribute="top" secondItem="8vq-1l-yyO" secondAttribute="bottom" id="kYD-7t-Nys"/>
+                                                    <constraint firstItem="2Gm-cF-JBL" firstAttribute="leading" secondItem="aTX-Md-uym" secondAttribute="leading" constant="8" id="kyG-AT-qIH"/>
+                                                    <constraint firstItem="X1W-Hy-iDa" firstAttribute="leading" secondItem="aTX-Md-uym" secondAttribute="leading" constant="8" id="tCS-bU-PcG"/>
+                                                    <constraint firstItem="LSS-Y9-g9k" firstAttribute="height" secondItem="ywY-Ql-fjv" secondAttribute="height" id="twS-dA-Rsh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ywY-Ql-fjv" secondAttribute="trailing" constant="8" id="ua7-wd-h6O"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zEc-Bk-UcU">
+                                                <rect key="frame" x="0.0" y="1010" width="414" height="350"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQa-sA-ZsA" userLabel="10SpacingView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="10" height="350"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="10" id="qhi-GJ-Mkd"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cPE-6i-Ndr">
+                                                        <rect key="frame" x="9" y="0.0" width="198.5" height="350"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="чтоВнутри1" translatesAutoresizingMaskIntoConstraints="NO" id="g33-bP-Xnn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="198.5" height="172.5"/>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pfv-np-tuz">
+                                                                <rect key="frame" x="0.0" y="177.5" width="198.5" height="172.5"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="чтоВнутри3" translatesAutoresizingMaskIntoConstraints="NO" id="IXQ-Uq-t7j">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="172.5"/>
+                                                                    </imageView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="чтоВнутри2" translatesAutoresizingMaskIntoConstraints="NO" id="uac-E7-GQ1">
+                                                                        <rect key="frame" x="102" y="0.0" width="96.5" height="172.5"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="IXQ-Uq-t7j" firstAttribute="width" secondItem="uac-E7-GQ1" secondAttribute="width" id="Dfs-Iw-L4m"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="g33-bP-Xnn" firstAttribute="height" secondItem="pfv-np-tuz" secondAttribute="height" id="WA2-5g-PQU"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQc-qQ-H7t">
+                                                        <rect key="frame" x="206.5" y="0.0" width="198.5" height="350"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В наборе Вы найдете:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWe-kj-DM7">
+                                                                <rect key="frame" x="8" y="0.0" width="182.5" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="CS4-Up-afH"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="22"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEU-JL-62W">
+                                                                <rect key="frame" x="8" y="60" width="182.5" height="290"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="✨">
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="AppleColorEmoji"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content"> Экосумку с готовым контуром
+</string>
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="✨">
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="AppleColorEmoji"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content"> Набор премиальных красок по ткани
+</string>
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="✨">
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="AppleColorEmoji"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content"> Кисти для рисования
+</string>
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="✨">
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="AppleColorEmoji"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content"> Интересную инструкцию
+</string>
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="💥">
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="AppleColorEmoji"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=" Приятный бонус*">
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="MWe-kj-DM7" firstAttribute="top" secondItem="bQc-qQ-H7t" secondAttribute="top" id="0tb-wv-dtw"/>
+                                                            <constraint firstAttribute="trailing" secondItem="hEU-JL-62W" secondAttribute="trailing" constant="8" id="1NM-HL-cwb"/>
+                                                            <constraint firstAttribute="bottom" secondItem="hEU-JL-62W" secondAttribute="bottom" id="KwW-zY-jlr"/>
+                                                            <constraint firstItem="hEU-JL-62W" firstAttribute="top" secondItem="MWe-kj-DM7" secondAttribute="bottom" id="OKI-aL-GR7"/>
+                                                            <constraint firstAttribute="trailing" secondItem="MWe-kj-DM7" secondAttribute="trailing" constant="8" id="bpM-hT-ze0"/>
+                                                            <constraint firstItem="MWe-kj-DM7" firstAttribute="leading" secondItem="bQc-qQ-H7t" secondAttribute="leading" constant="8" id="hUJ-Pt-qC4"/>
+                                                            <constraint firstItem="hEU-JL-62W" firstAttribute="leading" secondItem="bQc-qQ-H7t" secondAttribute="leading" constant="8" id="kzF-ya-jRF"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwG-qf-wie" userLabel="10SpacingView">
+                                                        <rect key="frame" x="404" y="0.0" width="10" height="350"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="10" id="D1S-t3-ztw"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="bQc-qQ-H7t" firstAttribute="width" secondItem="cPE-6i-Ndr" secondAttribute="width" id="aIS-7J-u0z"/>
+                                                    <constraint firstAttribute="height" constant="350" id="rWC-UC-qa4"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="CaZ-gy-zU7">
+                                                <rect key="frame" x="0.0" y="1385" width="414" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="DtO-B9-DEu"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yA-pD-Umf">
+                                                <rect key="frame" x="0.0" y="1470" width="414" height="350"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5KK-1Z-fuS" userLabel="10SpacingView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="10" height="350"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="10" id="hMB-WR-wcf"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Evx-Ss-LoZ">
+                                                        <rect key="frame" x="10" y="0.0" width="197" height="350"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Как рисовать" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z12-nM-lsP">
+                                                                <rect key="frame" x="8" y="0.0" width="181" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="QqU-ea-xJW"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qk-91-hHn">
+                                                                <rect key="frame" x="8" y="40" width="181" height="302"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="✨">
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="AppleColorEmoji"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content"> Готовый контур на сумке поможет не нарисовать лишнего
+</string>
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="✨">
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="AppleColorEmoji"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment>
+                                                                        <string key="content"> Инструкция с примером готового рисунка станет Вашим путеводителем в этом увлекательном процессе
+</string>
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="💥">
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="AppleColorEmoji"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=" ВАЖНО! Не забудьте сделать небольшой перерыв на *внимательный осмотр бонуса">
+                                                                        <attributes>
+                                                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="34.600000000000001" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                                <tabStops>
+                                                                                    <textTab alignment="left" location="34.599998474121094">
+                                                                                        <options/>
+                                                                                    </textTab>
+                                                                                </tabStops>
+                                                                            </paragraphStyle>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="7qk-91-hHn" secondAttribute="bottom" constant="8" id="EZr-nl-gOF"/>
+                                                            <constraint firstItem="Z12-nM-lsP" firstAttribute="leading" secondItem="Evx-Ss-LoZ" secondAttribute="leading" constant="8" id="MWE-Rn-3WO"/>
+                                                            <constraint firstItem="Z12-nM-lsP" firstAttribute="top" secondItem="Evx-Ss-LoZ" secondAttribute="top" id="PVT-X9-O7z"/>
+                                                            <constraint firstItem="7qk-91-hHn" firstAttribute="leading" secondItem="Evx-Ss-LoZ" secondAttribute="leading" constant="8" id="bs1-YJ-xqu"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Z12-nM-lsP" secondAttribute="trailing" constant="8" id="cE9-6g-yGv"/>
+                                                            <constraint firstAttribute="trailing" secondItem="7qk-91-hHn" secondAttribute="trailing" constant="8" id="k6N-hJ-1vc"/>
+                                                            <constraint firstItem="7qk-91-hHn" firstAttribute="top" secondItem="Z12-nM-lsP" secondAttribute="bottom" id="xNX-gY-vYc"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v0H-L4-scj">
+                                                        <rect key="frame" x="207" y="0.0" width="197" height="350"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="какРисовать1" translatesAutoresizingMaskIntoConstraints="NO" id="sd6-nN-uLB">
+                                                                <rect key="frame" x="0.0" y="0.0" width="197" height="172.5"/>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kOY-NZ-h5F">
+                                                                <rect key="frame" x="0.0" y="177.5" width="197" height="172.5"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="какРисовать2" translatesAutoresizingMaskIntoConstraints="NO" id="kek-fn-X9s">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="172.5"/>
+                                                                    </imageView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="какРисовать3" translatesAutoresizingMaskIntoConstraints="NO" id="Yal-yl-WTE">
+                                                                        <rect key="frame" x="101" y="0.0" width="96" height="172.5"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="kek-fn-X9s" firstAttribute="width" secondItem="Yal-yl-WTE" secondAttribute="width" id="PrS-CQ-tCG"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="sd6-nN-uLB" firstAttribute="height" secondItem="kOY-NZ-h5F" secondAttribute="height" id="gmP-l5-0wh"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugQ-nr-ORz" userLabel="10SpacingView">
+                                                        <rect key="frame" x="404" y="0.0" width="10" height="350"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="10" id="trx-Kx-lWs"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="350" id="ME9-Lk-uiz"/>
+                                                    <constraint firstItem="Evx-Ss-LoZ" firstAttribute="width" secondItem="v0H-L4-scj" secondAttribute="width" id="RUq-VF-tYu"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-NM-I9f">
+                                                <rect key="frame" x="0.0" y="1845" width="414" height="570"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отзывы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOj-FL-1Wz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="KDh-zl-yQ5"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7au-xO-4HE">
+                                                        <rect key="frame" x="0.0" y="40" width="414" height="120"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="отзыв1" translatesAutoresizingMaskIntoConstraints="NO" id="3jB-eo-o3V">
+                                                                <rect key="frame" x="0.0" y="0.0" width="272.5" height="120"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="done64" translatesAutoresizingMaskIntoConstraints="NO" id="xLw-Kn-a5o">
+                                                                <rect key="frame" x="277.5" y="0.0" width="136.5" height="120"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="3jB-eo-o3V" firstAttribute="width" secondItem="xLw-Kn-a5o" secondAttribute="width" multiplier="2" id="cXU-3D-OKi"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="deX-qW-d2D">
+                                                        <rect key="frame" x="0.0" y="170" width="414" height="120"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="done64" translatesAutoresizingMaskIntoConstraints="NO" id="Z7q-u8-xmn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="136.5" height="120"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="отзыв2" translatesAutoresizingMaskIntoConstraints="NO" id="Rtd-1D-hOo">
+                                                                <rect key="frame" x="141.5" y="0.0" width="272.5" height="120"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Rtd-1D-hOo" firstAttribute="width" secondItem="Z7q-u8-xmn" secondAttribute="width" multiplier="2" id="HGt-Ye-2f9"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="57l-No-3IA">
+                                                        <rect key="frame" x="0.0" y="300" width="414" height="200"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="отзыв3" translatesAutoresizingMaskIntoConstraints="NO" id="uy2-vK-b9u">
+                                                                <rect key="frame" x="0.0" y="0.0" width="272.5" height="200"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="done64" translatesAutoresizingMaskIntoConstraints="NO" id="pcQ-47-0Ip">
+                                                                <rect key="frame" x="277.5" y="0.0" width="136.5" height="200"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="200" id="CHr-Hw-nph"/>
+                                                            <constraint firstItem="uy2-vK-b9u" firstAttribute="width" secondItem="pcQ-47-0Ip" secondAttribute="width" multiplier="2" id="b4Q-Lc-VAs"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsa-FQ-o5z">
+                                                        <rect key="frame" x="0.0" y="510" width="414" height="60"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oq0-d7-dKK">
+                                                                <rect key="frame" x="7" y="5" width="400" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="400" id="7sl-Oe-voj"/>
+                                                                    <constraint firstAttribute="height" constant="50" id="8Ri-mA-7pg"/>
+                                                                </constraints>
+                                                                <state key="normal" backgroundImage="instaButtonImage"/>
+                                                                <connections>
+                                                                    <action selector="instaButtonTapped:" destination="AKJ-Ss-fRx" eventType="touchUpInside" id="Dcm-Rw-Q0E"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Oq0-d7-dKK" firstAttribute="centerY" secondItem="rsa-FQ-o5z" secondAttribute="centerY" id="JGB-EH-9Vp"/>
+                                                            <constraint firstItem="Oq0-d7-dKK" firstAttribute="centerX" secondItem="rsa-FQ-o5z" secondAttribute="centerX" id="LtV-sC-2Oe"/>
+                                                            <constraint firstAttribute="height" constant="60" id="rne-cM-vSK"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="7au-xO-4HE" firstAttribute="height" secondItem="deX-qW-d2D" secondAttribute="height" id="Fsn-0g-wLC"/>
+                                                    <constraint firstAttribute="height" constant="570" id="GXT-TO-rRz"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="N90-H2-xKv" firstAttribute="width" secondItem="A2a-e8-F6B" secondAttribute="width" id="4iW-0Y-S0V"/>
+                                    <constraint firstItem="N90-H2-xKv" firstAttribute="bottom" secondItem="FHN-xr-dlG" secondAttribute="bottom" id="6Om-lX-zft"/>
+                                    <constraint firstItem="N90-H2-xKv" firstAttribute="trailing" secondItem="FHN-xr-dlG" secondAttribute="trailing" id="OI3-Ql-x8c"/>
+                                    <constraint firstItem="N90-H2-xKv" firstAttribute="leading" secondItem="FHN-xr-dlG" secondAttribute="leading" id="g2F-fn-44I"/>
+                                    <constraint firstItem="N90-H2-xKv" firstAttribute="top" secondItem="FHN-xr-dlG" secondAttribute="top" id="jfd-zC-YWF"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="FHN-xr-dlG"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="A2a-e8-F6B"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ESg-Gz-ZSV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d2a-aa-XHU" firstAttribute="top" secondItem="PF8-xL-CIs" secondAttribute="top" id="cuv-Ir-x4Z"/>
+                            <constraint firstItem="d2a-aa-XHU" firstAttribute="bottom" secondItem="PF8-xL-CIs" secondAttribute="bottom" id="fLe-Jz-iFp"/>
+                            <constraint firstItem="d2a-aa-XHU" firstAttribute="trailing" secondItem="PF8-xL-CIs" secondAttribute="trailing" id="g2L-ur-sRY"/>
+                            <constraint firstItem="d2a-aa-XHU" firstAttribute="leading" secondItem="PF8-xL-CIs" secondAttribute="leading" id="x11-og-v33"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="RP Дом" id="NDe-2r-SpI"/>
+                    <connections>
+                        <outlet property="videoBackgroundView" destination="gnt-fq-bz2" id="rX3-xN-Vwx"/>
+                        <outletCollection property="allImages" destination="g33-bP-Xnn" collectionClass="NSMutableArray" id="91p-Do-bJo"/>
+                        <outletCollection property="allImages" destination="IXQ-Uq-t7j" collectionClass="NSMutableArray" id="i25-F0-mYE"/>
+                        <outletCollection property="allImages" destination="uac-E7-GQ1" collectionClass="NSMutableArray" id="eRa-n7-PFw"/>
+                        <outletCollection property="allImages" destination="sd6-nN-uLB" collectionClass="NSMutableArray" id="HnI-eY-pwq"/>
+                        <outletCollection property="allImages" destination="kek-fn-X9s" collectionClass="NSMutableArray" id="4cC-KF-ghG"/>
+                        <outletCollection property="allImages" destination="Yal-yl-WTE" collectionClass="NSMutableArray" id="Cd5-ZF-mNu"/>
+                        <outletCollection property="allImages" destination="3jB-eo-o3V" collectionClass="NSMutableArray" id="fdL-CV-UaU"/>
+                        <outletCollection property="allImages" destination="Rtd-1D-hOo" collectionClass="NSMutableArray" id="HPK-AJ-e7F"/>
+                        <outletCollection property="allImages" destination="uy2-vK-b9u" collectionClass="NSMutableArray" id="fex-2h-KBz"/>
+                        <outletCollection property="allLabels" destination="X1W-Hy-iDa" collectionClass="NSMutableArray" id="NyI-y3-o8r"/>
+                        <outletCollection property="allLabels" destination="8vq-1l-yyO" collectionClass="NSMutableArray" id="1TN-5z-wQ7"/>
+                        <outletCollection property="allLabels" destination="2Gm-cF-JBL" collectionClass="NSMutableArray" id="4lU-kU-fe1"/>
+                        <outletCollection property="allLabels" destination="MWe-kj-DM7" collectionClass="NSMutableArray" id="Gsd-TC-eaN"/>
+                        <outletCollection property="allLabels" destination="hEU-JL-62W" collectionClass="NSMutableArray" id="f5K-Td-Dn7"/>
+                        <outletCollection property="allLabels" destination="Z12-nM-lsP" collectionClass="NSMutableArray" id="LJK-S8-ajd"/>
+                        <outletCollection property="allLabels" destination="7qk-91-hHn" collectionClass="NSMutableArray" id="qnb-uo-lCe"/>
+                        <outletCollection property="allLabels" destination="AOj-FL-1Wz" collectionClass="NSMutableArray" id="cba-Jg-eqR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zbn-o3-r9o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.00000000000003" y="8.7053571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabBarHome" width="32" height="32"/>
+        <image name="done64" width="32" height="32"/>
+        <image name="instaButtonImage" width="1771.5" height="212"/>
+        <image name="logo" width="236" height="236"/>
+        <image name="какРисовать1" width="1987" height="1125"/>
+        <image name="какРисовать2" width="562.5" height="993"/>
+        <image name="какРисовать3" width="562.5" height="991"/>
+        <image name="отзыв1" width="514" height="235"/>
+        <image name="отзыв2" width="517" height="245"/>
+        <image name="отзыв3" width="516.5" height="429.5"/>
+        <image name="чтоВнутри1" width="999" height="562.5"/>
+        <image name="чтоВнутри2" width="1512" height="2016"/>
+        <image name="чтоВнутри3" width="452.5" height="575"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

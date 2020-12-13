@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zaJ-mi-7Yy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Тест-->
+        <scene sceneID="HUk-s9-gC1">
+            <objects>
+                <viewController storyboardIdentifier="ANQuizViewController" id="ve0-f5-ID6" customClass="ANQuizViewController" customModule="RP_Wear_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TDh-E7-3OB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-tq-STl" customClass="GIFImageView" customModule="GIFImageView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animatedImage" value="stars"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MA8-fL-lqp" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="41.5" y="242" width="331" height="412"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="r03-Py-46Y" customClass="ANProgressView" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="325" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="eCf-kZ-R76"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" systemColor="systemGray4Color"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="nC2-VW-gJ0" userLabel="Fake" customClass="ANProgressView" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                <rect key="frame" x="333" y="88" width="81" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="FaA-BW-mdH"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" systemColor="systemGray4Color"/>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HVU-jg-KbG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nC2-VW-gJ0" firstAttribute="width" secondItem="r03-Py-46Y" secondAttribute="width" multiplier="0.25" id="6A4-3f-dZJ"/>
+                            <constraint firstItem="MA8-fL-lqp" firstAttribute="height" secondItem="TDh-E7-3OB" secondAttribute="height" multiplier="0.46" id="8F4-aP-ryY"/>
+                            <constraint firstItem="MA8-fL-lqp" firstAttribute="centerX" secondItem="TDh-E7-3OB" secondAttribute="centerX" id="BDU-MS-rBm"/>
+                            <constraint firstItem="hfD-tq-STl" firstAttribute="leading" secondItem="HVU-jg-KbG" secondAttribute="leading" id="C88-xH-PTC"/>
+                            <constraint firstItem="nC2-VW-gJ0" firstAttribute="leading" secondItem="r03-Py-46Y" secondAttribute="trailing" constant="8" symbolic="YES" id="HmA-37-PDa"/>
+                            <constraint firstItem="HVU-jg-KbG" firstAttribute="bottom" secondItem="hfD-tq-STl" secondAttribute="bottom" id="Wa0-lf-E8d"/>
+                            <constraint firstItem="MA8-fL-lqp" firstAttribute="centerY" secondItem="TDh-E7-3OB" secondAttribute="centerY" id="XMC-Pa-iAJ"/>
+                            <constraint firstItem="hfD-tq-STl" firstAttribute="top" secondItem="HVU-jg-KbG" secondAttribute="top" id="ey9-RL-Igg"/>
+                            <constraint firstItem="MA8-fL-lqp" firstAttribute="width" secondItem="TDh-E7-3OB" secondAttribute="width" multiplier="0.8" id="fTS-3I-KJ0"/>
+                            <constraint firstItem="HVU-jg-KbG" firstAttribute="trailing" secondItem="hfD-tq-STl" secondAttribute="trailing" id="g7A-do-w2F"/>
+                            <constraint firstItem="nC2-VW-gJ0" firstAttribute="top" secondItem="HVU-jg-KbG" secondAttribute="top" id="gNA-Zm-MCL"/>
+                            <constraint firstAttribute="trailing" secondItem="nC2-VW-gJ0" secondAttribute="trailing" id="omH-Te-prb"/>
+                            <constraint firstItem="r03-Py-46Y" firstAttribute="leading" secondItem="TDh-E7-3OB" secondAttribute="leading" id="t3E-0f-w8G"/>
+                            <constraint firstItem="r03-Py-46Y" firstAttribute="top" secondItem="HVU-jg-KbG" secondAttribute="top" id="xnW-jI-lwK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="repeatCount">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="animatedImage" value="stars"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" title="Тест" id="Hbu-HT-VbU">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="RjS-Ob-h8F">
+                            <connections>
+                                <action selector="replyButtonTapped:" destination="ve0-f5-ID6" id="bP4-UN-MPx"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="6dt-HW-G5G">
+                            <connections>
+                                <action selector="refreshButtonTapped:" destination="ve0-f5-ID6" id="TPU-uD-cXd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="kolodaView" destination="MA8-fL-lqp" id="26P-Lp-WDq"/>
+                        <outlet property="myProgressView" destination="r03-Py-46Y" id="f0C-hK-Ljs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TIY-8W-Ebf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942.02898550724649" y="115.84821428571428"/>
+        </scene>
+        <!--Тест-->
+        <scene sceneID="WbC-1u-Pwh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zaJ-mi-7Yy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Тест" image="TabBarTest" selectedImage="TabBarTest" id="nMA-yw-IwB"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IWz-5E-tIR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.1843137255" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ve0-f5-ID6" kind="relationship" relationship="rootViewController" id="pnt-Lb-HLQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSE-2T-iWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.00000000000003" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabBarTest" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

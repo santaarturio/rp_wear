@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sk6-pU-GN3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="uYV-4i-cAJ">
+            <objects>
+                <viewController storyboardIdentifier="ANSplashViewController" id="sk6-pU-GN3" customClass="ANSplashViewController" customModule="RP_Wear_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dsv-vP-sj6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinkBack" translatesAutoresizingMaskIntoConstraints="NO" id="56L-LS-V6V">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo6" translatesAutoresizingMaskIntoConstraints="NO" id="CEe-nT-Q49">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="5nY-V8-LsR"/>
+                                    <constraint firstAttribute="height" constant="150" id="VnP-V7-R67"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo66" translatesAutoresizingMaskIntoConstraints="NO" id="aSU-pt-qI5">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Ph7-11-j5O"/>
+                                    <constraint firstAttribute="width" constant="150" id="QM5-7t-iwl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo666" translatesAutoresizingMaskIntoConstraints="NO" id="6T7-Nq-c0C">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="MTF-g9-sbI"/>
+                                    <constraint firstAttribute="height" constant="150" id="uVu-S2-uKm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo6666" translatesAutoresizingMaskIntoConstraints="NO" id="b7s-OV-M5h">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="BDk-ya-bAP"/>
+                                    <constraint firstAttribute="height" constant="150" id="gxE-tS-Y8x"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XVc-nh-LDB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="56L-LS-V6V" firstAttribute="trailing" secondItem="XVc-nh-LDB" secondAttribute="trailing" id="AaN-1k-UAs"/>
+                            <constraint firstItem="aSU-pt-qI5" firstAttribute="centerY" secondItem="Dsv-vP-sj6" secondAttribute="centerY" id="Hue-TI-s9P"/>
+                            <constraint firstItem="56L-LS-V6V" firstAttribute="leading" secondItem="XVc-nh-LDB" secondAttribute="leading" id="KNK-CK-wm8"/>
+                            <constraint firstItem="6T7-Nq-c0C" firstAttribute="centerX" secondItem="Dsv-vP-sj6" secondAttribute="centerX" id="SDQ-Ml-Qfw"/>
+                            <constraint firstItem="aSU-pt-qI5" firstAttribute="centerX" secondItem="Dsv-vP-sj6" secondAttribute="centerX" id="STo-cG-1tD"/>
+                            <constraint firstItem="56L-LS-V6V" firstAttribute="top" secondItem="Dsv-vP-sj6" secondAttribute="top" id="cEx-Cu-c1s"/>
+                            <constraint firstItem="CEe-nT-Q49" firstAttribute="centerY" secondItem="Dsv-vP-sj6" secondAttribute="centerY" id="csj-vC-2Lh"/>
+                            <constraint firstItem="b7s-OV-M5h" firstAttribute="centerY" secondItem="Dsv-vP-sj6" secondAttribute="centerY" id="hPP-eY-zlS"/>
+                            <constraint firstAttribute="bottom" secondItem="56L-LS-V6V" secondAttribute="bottom" id="jKC-aS-vLd"/>
+                            <constraint firstItem="6T7-Nq-c0C" firstAttribute="centerY" secondItem="Dsv-vP-sj6" secondAttribute="centerY" id="k9j-ps-nQd"/>
+                            <constraint firstItem="b7s-OV-M5h" firstAttribute="centerX" secondItem="Dsv-vP-sj6" secondAttribute="centerX" id="nMo-VH-oVZ"/>
+                            <constraint firstItem="CEe-nT-Q49" firstAttribute="centerX" secondItem="Dsv-vP-sj6" secondAttribute="centerX" id="r14-FZ-rXZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="56L-LS-V6V" id="fQs-g3-d21"/>
+                        <outlet property="logoBackImageView" destination="CEe-nT-Q49" id="lBG-pj-5zf"/>
+                        <outlet property="logoBrushImageView" destination="6T7-Nq-c0C" id="uVr-d8-HzH"/>
+                        <outlet property="logoCharsImageView" destination="aSU-pt-qI5" id="3Pz-Wb-wp0"/>
+                        <outlet property="logoPaletteImageView" destination="b7s-OV-M5h" id="iaF-l1-UgI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NUp-Yb-XAS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1098.5507246376812" y="-64.285714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo6" width="1240" height="1240"/>
+        <image name="logo66" width="1240" height="1240"/>
+        <image name="logo666" width="1240" height="1240"/>
+        <image name="logo6666" width="1240" height="1240"/>
+        <image name="pinkBack" width="500" height="950"/>
+    </resources>
+</document>

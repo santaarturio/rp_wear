@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W6b-C6-xOB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Result View Controller-->
+        <scene sceneID="5Vs-v0-pcz">
+            <objects>
+                <viewController storyboardIdentifier="ANResultViewController" id="W6b-C6-xOB" customClass="ANResultViewController" customModule="RP_Wear_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0DC-iU-odb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="OxC-Xl-Xgz" userLabel="Fake" customClass="ANProgressView" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                <rect key="frame" x="162.5" y="44" width="162.5" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="nts-Mo-oy4"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" systemColor="systemGray4Color"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="X3O-q5-eww" userLabel="Fake" customClass="ANProgressView" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="162.5" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="iQb-b1-rdm"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" systemColor="systemGray4Color"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="89y-Od-EzT" customClass="ANProgressView" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                <rect key="frame" x="333" y="44" width="81" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="rxq-Kx-Ei6"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" systemColor="systemGray4Color"/>
+                            </progressView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAa-bh-1Sv">
+                                <rect key="frame" x="20" y="54" width="374" height="730"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GYx-7E-4sr">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="506"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отличный выбор!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMq-k3-Why">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="33.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <color key="textColor" red="0.99813944099999996" green="0.17223343250000001" blue="0.5725666881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b1H-JI-cLR">
+                                                <rect key="frame" x="0.0" y="41.5" width="374" height="403"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="vTr-xY-cSK">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ANResultCollectionViewCell" id="oe3-xQ-bY1" customClass="ANResultCollectionViewCell" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="d9l-ec-XXq">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jbn-yN-89B">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="jbn-yN-89B" secondAttribute="trailing" id="ATV-sF-BSP"/>
+                                                                <constraint firstItem="jbn-yN-89B" firstAttribute="leading" secondItem="d9l-ec-XXq" secondAttribute="leading" id="FVK-eF-O85"/>
+                                                                <constraint firstAttribute="bottom" secondItem="jbn-yN-89B" secondAttribute="bottom" id="a1T-bG-7Dw"/>
+                                                                <constraint firstItem="jbn-yN-89B" firstAttribute="top" secondItem="d9l-ec-XXq" secondAttribute="top" id="tTo-UJ-on4"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <outlet property="myImageView" destination="jbn-yN-89B" id="QZR-t2-Run"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Z7-qs-TRc" customClass="ANLabel" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="452.5" width="374" height="24"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="body" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p3i-SQ-9hO" customClass="ANLabel" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="484.5" width="374" height="21.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GYx-7E-4sr" firstAttribute="width" secondItem="9Kl-Fd-gj4" secondAttribute="width" id="PKz-jc-PJh"/>
+                                    <constraint firstItem="GYx-7E-4sr" firstAttribute="trailing" secondItem="TKC-9Y-FOh" secondAttribute="trailing" id="PRb-QO-Xpv"/>
+                                    <constraint firstItem="GYx-7E-4sr" firstAttribute="bottom" secondItem="TKC-9Y-FOh" secondAttribute="bottom" id="fJq-8O-8zK"/>
+                                    <constraint firstItem="GYx-7E-4sr" firstAttribute="top" secondItem="TKC-9Y-FOh" secondAttribute="top" id="pYh-Lr-yBZ"/>
+                                    <constraint firstItem="GYx-7E-4sr" firstAttribute="leading" secondItem="TKC-9Y-FOh" secondAttribute="leading" id="qhm-FJ-Uvt"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="TKC-9Y-FOh"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="9Kl-Fd-gj4"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrg-DX-5w0" customClass="ANButton" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                <rect key="frame" x="20" y="792" width="374" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dmU-a0-u9R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Добавить в корзину">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToCartButtonTapped:" destination="W6b-C6-xOB" eventType="touchUpInside" id="s3d-ut-of9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dWi-as-tmf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X3O-q5-eww" firstAttribute="width" secondItem="OxC-Xl-Xgz" secondAttribute="width" id="CZZ-Kh-Ya5"/>
+                            <constraint firstItem="89y-Od-EzT" firstAttribute="top" secondItem="dWi-as-tmf" secondAttribute="top" id="Dtj-cE-LBk"/>
+                            <constraint firstItem="Nrg-DX-5w0" firstAttribute="bottom" secondItem="dWi-as-tmf" secondAttribute="bottom" constant="-10" id="GkF-zW-IKD"/>
+                            <constraint firstItem="X3O-q5-eww" firstAttribute="top" secondItem="dWi-as-tmf" secondAttribute="top" id="MM7-2x-Hme"/>
+                            <constraint firstItem="dWi-as-tmf" firstAttribute="trailing" secondItem="rAa-bh-1Sv" secondAttribute="trailing" constant="20" id="Q2f-Pa-RPX"/>
+                            <constraint firstItem="89y-Od-EzT" firstAttribute="leading" secondItem="OxC-Xl-Xgz" secondAttribute="trailing" constant="8" symbolic="YES" id="Rdw-rV-Tm2"/>
+                            <constraint firstItem="rAa-bh-1Sv" firstAttribute="top" secondItem="OxC-Xl-Xgz" secondAttribute="bottom" constant="8" symbolic="YES" id="VZm-cJ-D0L"/>
+                            <constraint firstItem="OxC-Xl-Xgz" firstAttribute="top" secondItem="dWi-as-tmf" secondAttribute="top" id="VfR-FC-cxy"/>
+                            <constraint firstItem="Nrg-DX-5w0" firstAttribute="leading" secondItem="dWi-as-tmf" secondAttribute="leading" constant="20" id="dV8-pC-efH"/>
+                            <constraint firstItem="OxC-Xl-Xgz" firstAttribute="leading" secondItem="X3O-q5-eww" secondAttribute="trailing" id="etR-F6-mHm"/>
+                            <constraint firstItem="rAa-bh-1Sv" firstAttribute="leading" secondItem="dWi-as-tmf" secondAttribute="leading" constant="20" id="fqF-sB-P41"/>
+                            <constraint firstItem="b1H-JI-cLR" firstAttribute="height" secondItem="0DC-iU-odb" secondAttribute="height" multiplier="0.45" id="gqH-r9-4Ys"/>
+                            <constraint firstItem="89y-Od-EzT" firstAttribute="width" secondItem="OxC-Xl-Xgz" secondAttribute="width" multiplier="0.5" id="nhp-58-xZv"/>
+                            <constraint firstItem="dWi-as-tmf" firstAttribute="trailing" secondItem="Nrg-DX-5w0" secondAttribute="trailing" constant="20" id="otu-a7-hcg"/>
+                            <constraint firstItem="dWi-as-tmf" firstAttribute="trailing" secondItem="89y-Od-EzT" secondAttribute="trailing" id="qPd-mU-lr5"/>
+                            <constraint firstItem="X3O-q5-eww" firstAttribute="leading" secondItem="dWi-as-tmf" secondAttribute="leading" id="twx-J0-2TU"/>
+                            <constraint firstItem="Nrg-DX-5w0" firstAttribute="top" secondItem="rAa-bh-1Sv" secondAttribute="bottom" constant="8" symbolic="YES" id="xIk-oU-Pje"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addToCartButton" destination="Nrg-DX-5w0" id="gTd-oq-Mll"/>
+                        <outlet property="descriptionBodyLabel" destination="p3i-SQ-9hO" id="UQm-UP-eKw"/>
+                        <outlet property="descriptionTitleLabel" destination="9Z7-qs-TRc" id="Sra-KU-zSg"/>
+                        <outlet property="myCollectionView" destination="b1H-JI-cLR" id="xwF-dS-RCa"/>
+                        <outlet property="myProgressView" destination="89y-Od-EzT" id="lf5-jx-2X1"/>
+                        <outlet property="topLabel" destination="OMq-k3-Why" id="AuT-uE-hLa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sf3-DU-bxV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262.31884057971018" y="-53.571428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

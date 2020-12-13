@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Шаг 2-->
+        <scene sceneID="hHR-iL-DWZ">
+            <objects>
+                <viewController storyboardIdentifier="ANImageBagCreatorViewController" id="qcI-ag-3zy" customClass="ANImageBagCreatorViewController" customModule="RP_Wear_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3GR-ci-1Lo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMw-FS-Yeb" customClass="ANButton" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                <rect key="frame" x="20" y="792" width="374" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OjI-UT-QeG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Шаг 3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextStepButtonTapped:" destination="qcI-ag-3zy" eventType="touchUpInside" id="3x9-uk-aMm"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l8d-5I-uu9">
+                                <rect key="frame" x="20" y="54" width="374" height="313.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="o1Z-UC-qHu">
+                                <rect key="frame" x="20" y="375.5" width="374" height="408.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="mm1-rM-tN9">
+                                    <size key="itemSize" width="128" height="134"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ANImageBagCreatorCollectionViewCell" reuseIdentifier="ANImageBagCreatorCollectionViewCell" id="3gf-hA-KvA" customClass="ANImageBagCreatorCollectionViewCell" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="134"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="plm-hd-h5I">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="134"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gdr-ud-NpU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="134"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Gdr-ud-NpU" firstAttribute="top" secondItem="plm-hd-h5I" secondAttribute="top" id="3Et-RR-ETk"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gdr-ud-NpU" secondAttribute="trailing" id="IOa-B9-BbT"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gdr-ud-NpU" secondAttribute="bottom" id="mD9-w6-eMB"/>
+                                                <constraint firstItem="Gdr-ud-NpU" firstAttribute="leading" secondItem="plm-hd-h5I" secondAttribute="leading" id="tnf-pO-fDb"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="128" height="134"/>
+                                        <connections>
+                                            <outlet property="myImageView" destination="Gdr-ud-NpU" id="aGK-cU-D4w"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="qcI-ag-3zy" id="bMH-Zx-A80"/>
+                                    <outlet property="delegate" destination="qcI-ag-3zy" id="Yn3-CK-jUg"/>
+                                </connections>
+                            </collectionView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="afF-Pm-Fe7" userLabel="Fake" customClass="ANProgressView" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="162.5" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="4xd-SB-r4K"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" systemColor="systemGray4Color"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="sPm-bh-qaI" customClass="ANProgressView" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                <rect key="frame" x="162.5" y="44" width="162.5" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="hoC-Fp-SyB"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" systemColor="systemGray4Color"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="f6d-7z-i14" userLabel="Fake" customClass="ANProgressView" customModule="RP_Wear_2_0" customModuleProvider="target">
+                                <rect key="frame" x="333" y="44" width="81" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="9Yk-7v-45X"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" systemColor="systemGray4Color"/>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tzI-j4-aE2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bMw-FS-Yeb" firstAttribute="leading" secondItem="tzI-j4-aE2" secondAttribute="leading" constant="20" id="1RE-uJ-IY0"/>
+                            <constraint firstItem="sPm-bh-qaI" firstAttribute="leading" secondItem="afF-Pm-Fe7" secondAttribute="trailing" id="1jG-if-xUH"/>
+                            <constraint firstItem="tzI-j4-aE2" firstAttribute="trailing" secondItem="bMw-FS-Yeb" secondAttribute="trailing" constant="20" id="Fqv-Yp-yXu"/>
+                            <constraint firstItem="afF-Pm-Fe7" firstAttribute="width" secondItem="sPm-bh-qaI" secondAttribute="width" id="HBr-Kc-2TK"/>
+                            <constraint firstItem="l8d-5I-uu9" firstAttribute="top" secondItem="afF-Pm-Fe7" secondAttribute="bottom" constant="8" symbolic="YES" id="Hr3-cJ-6ux"/>
+                            <constraint firstItem="afF-Pm-Fe7" firstAttribute="leading" secondItem="tzI-j4-aE2" secondAttribute="leading" id="Mqj-qe-gyk"/>
+                            <constraint firstItem="l8d-5I-uu9" firstAttribute="height" secondItem="3GR-ci-1Lo" secondAttribute="height" multiplier="0.35" id="OC3-qN-JVW"/>
+                            <constraint firstItem="tzI-j4-aE2" firstAttribute="trailing" secondItem="l8d-5I-uu9" secondAttribute="trailing" constant="20" id="Q9m-rk-btW"/>
+                            <constraint firstItem="l8d-5I-uu9" firstAttribute="leading" secondItem="tzI-j4-aE2" secondAttribute="leading" constant="20" id="Z01-at-Kif"/>
+                            <constraint firstItem="o1Z-UC-qHu" firstAttribute="top" secondItem="l8d-5I-uu9" secondAttribute="bottom" constant="8" symbolic="YES" id="aYU-3X-WiA"/>
+                            <constraint firstItem="tzI-j4-aE2" firstAttribute="trailing" secondItem="o1Z-UC-qHu" secondAttribute="trailing" constant="20" id="bhC-JP-sSk"/>
+                            <constraint firstItem="afF-Pm-Fe7" firstAttribute="top" secondItem="tzI-j4-aE2" secondAttribute="top" id="ceN-XF-Dus"/>
+                            <constraint firstItem="f6d-7z-i14" firstAttribute="leading" secondItem="sPm-bh-qaI" secondAttribute="trailing" constant="8" symbolic="YES" id="jG4-m0-Vht"/>
+                            <constraint firstItem="bMw-FS-Yeb" firstAttribute="bottom" secondItem="tzI-j4-aE2" secondAttribute="bottom" constant="-10" id="lp1-As-yeI"/>
+                            <constraint firstItem="tzI-j4-aE2" firstAttribute="trailing" secondItem="f6d-7z-i14" secondAttribute="trailing" id="nHW-NW-0ru"/>
+                            <constraint firstItem="f6d-7z-i14" firstAttribute="width" secondItem="sPm-bh-qaI" secondAttribute="width" multiplier="0.5" id="sND-U8-4A7"/>
+                            <constraint firstItem="o1Z-UC-qHu" firstAttribute="leading" secondItem="tzI-j4-aE2" secondAttribute="leading" constant="20" id="uKr-Mh-Hl3"/>
+                            <constraint firstItem="sPm-bh-qaI" firstAttribute="top" secondItem="tzI-j4-aE2" secondAttribute="top" id="wWG-ZH-db7"/>
+                            <constraint firstItem="bMw-FS-Yeb" firstAttribute="top" secondItem="o1Z-UC-qHu" secondAttribute="bottom" constant="8" symbolic="YES" id="wog-Gu-1z9"/>
+                            <constraint firstItem="f6d-7z-i14" firstAttribute="top" secondItem="tzI-j4-aE2" secondAttribute="top" id="z0B-so-nX6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Шаг 2" id="F8r-cb-1wd"/>
+                    <connections>
+                        <outlet property="myCollectionView" destination="o1Z-UC-qHu" id="iRO-ym-uDl"/>
+                        <outlet property="myProgressView" destination="sPm-bh-qaI" id="tFg-or-W5V"/>
+                        <outlet property="nextStepButton" destination="bMw-FS-Yeb" id="CKF-up-ds4"/>
+                        <outlet property="topImageView" destination="l8d-5I-uu9" id="ERa-wL-LV5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mMW-1w-SRU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="134.59821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
