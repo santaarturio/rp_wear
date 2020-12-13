@@ -41,6 +41,7 @@ class CartManager {
             cartItem.itemImageName = product.productImageName
             cartItem.itemDescription = product.description
             cartItem.itemPrice = Int64(product.price)
+            
         })
     }
     //MARK: - Get
