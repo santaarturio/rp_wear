@@ -13,6 +13,8 @@ class Product {
     var description: String
     var price: Int
     
+    var index = 0
+    
     init(name: String, productImageName: String, description: String, price: Int) {
         self.name = name
         self.productImageName = productImageName

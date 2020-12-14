@@ -13,17 +13,20 @@ import MagicalRecord
 class CartManager {
     static let shared = CartManager()
     private var ordersArray: [Product]
+    private var productIndex = 0
     
     private init() {
-        let objects = CartItem.mr_findAll() ?? []
+        let objects = CartItem.mr_findAllSorted(by: "itemIndex", ascending: true)
         var products = [Product]()
-        for object in objects {
+        for object in objects! {
             guard let cartItem = object as? CartItem else { continue }
             let product = Product()
             product.name = cartItem.itemName ?? ""
             product.productImageName = cartItem.itemImageName ?? ""
             product.description = cartItem.itemDescription ?? ""
             product.price = Int(cartItem.itemPrice)
+            productIndex = Int(cartItem.itemIndex)
+            product.index = productIndex
             products.append(product)
         }
         ordersArray = products
@@ -32,6 +35,8 @@ class CartManager {
     //MARK: - MagicalRecord -
     //MARK: - Put
     public func putNewOrder(_ product: Product) {
+        productIndex += 1
+        product.index = productIndex
         ordersArray.append(product)
         NotificationCenter.default.post(name: .CartOrdersArrayChanged, object: nil)
         
@@ -41,6 +46,7 @@ class CartManager {
             cartItem.itemImageName = product.productImageName
             cartItem.itemDescription = product.description
             cartItem.itemPrice = Int64(product.price)
+            cartItem.itemIndex = Int64(product.index)
         })
     }
     //MARK: - Get
@@ -53,11 +59,11 @@ class CartManager {
     //MARK: - Remove
     public func removeOrder(at index: Int) {
         if index < ordersArray.count {
-            ordersArray.remove(at: index)
+            let deletedItemIndex = Int64(ordersArray.remove(at: index).index)
             NotificationCenter.default.post(name: .CartOrdersArrayChanged, object: nil)
             
-            guard let objects = CartItem.mr_findAll() else { return }
-            let cartItem = objects[index]
+            guard let cartItem = CartItem.mr_findFirst(byAttribute: "itemIndex",
+                                                       withValue: deletedItemIndex) else { return }
             cartItem.mr_deleteEntity()
             NSManagedObjectContext.mr_default().mr_saveToPersistentStoreAndWait()
         }

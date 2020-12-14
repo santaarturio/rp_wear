@@ -3,10 +3,11 @@
     <entity name="CartItem" representedClassName="CartItem" syncable="YES" codeGenerationType="class">
         <attribute name="itemDescription" optional="YES" attributeType="String"/>
         <attribute name="itemImageName" optional="YES" attributeType="String"/>
+        <attribute name="itemIndex" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="itemName" optional="YES" attributeType="String"/>
         <attribute name="itemPrice" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="CartItem" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="CartItem" positionX="-63" positionY="-18" width="128" height="104"/>
     </elements>
 </model>

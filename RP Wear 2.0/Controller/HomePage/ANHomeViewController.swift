@@ -98,7 +98,6 @@ class ANHomeViewController: DefaultViewController {
     //MARK: - User defaults
     private func checkUserDefaults() {
 //                UserDefaults.standard.removeObject(forKey: "haveSeenTutorial")
-        
         guard
             UserDefaults.standard.object(forKey: "haveSeenTutorial") == nil else { return }
         let identifier = String(describing: ANFirstMeetingViewController.self)
