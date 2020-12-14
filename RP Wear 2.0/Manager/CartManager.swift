@@ -16,9 +16,9 @@ class CartManager {
     private var productIndex = 0
     
     private init() {
-        let objects = CartItem.mr_findAllSorted(by: "itemIndex", ascending: true)
+        if let objects = CartItem.mr_findAllSorted(by: "itemIndex", ascending: true) {
         var products = [Product]()
-        for object in objects! {
+        for object in objects {
             guard let cartItem = object as? CartItem else { continue }
             let product = Product()
             product.name = cartItem.itemName ?? ""
@@ -30,6 +30,7 @@ class CartManager {
             products.append(product)
         }
         ordersArray = products
+        } else { ordersArray = [] }
     }
     
     //MARK: - MagicalRecord -
