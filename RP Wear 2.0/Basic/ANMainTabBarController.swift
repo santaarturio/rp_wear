@@ -11,7 +11,8 @@ class ANMainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(cartOrdersArrayChanged(sender:)), name: .CartOrdersArrayChanged, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(cartOrdersArrayChanged(sender:)),
+                                               name: .CartOrdersArrayChanged, object: nil)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -19,7 +20,8 @@ class ANMainTabBarController: UITabBarController {
     }
     //MARK: - Action
     @objc private func cartOrdersArrayChanged(sender: Notification) {
-        let value = CartManager.shared.getOrdersArrayCount() != 0 ? CartManager.shared.getOrdersArrayCount().description : nil
+        let value = CartManager.shared.getOrdersArrayCount() != 0 ?
+            CartManager.shared.getOrdersArrayCount().description : nil
         tabBar.items?.last?.badgeValue = value
     }
 }
