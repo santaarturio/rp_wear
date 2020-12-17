@@ -10,6 +10,7 @@ import UIKit
 import MagicalRecord
 //import CoreData
 
+
 class CartManager {
     static let shared = CartManager()
     private var ordersArray: [Product]
