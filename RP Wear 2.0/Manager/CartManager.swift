@@ -107,6 +107,8 @@ class CartManager {
      cartItem.setValue(product.price, forKey: "itemPrice")
      appDelegate.saveContext()
      
+     
+     
      default: break
      }
      NotificationCenter.default.post(name: .CartOrdersArrayChanged, object: nil)
