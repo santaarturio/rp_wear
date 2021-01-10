@@ -69,76 +69,8 @@ class CartManager {
             NSManagedObjectContext.mr_default().mr_saveToPersistentStoreAndWait()
         }
     }
-    
-    /*
-     //MARK: - CoreData -
-     //MARK: = Private
-     private func getContext() -> NSManagedObjectContext {
-     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-     let context = appDelegate.persistentContainer.viewContext
-     return context
-     }
-     private func getObjectsFromContext() -> [CartItem] {
-     let context = getContext()
-     let fetchRequest: NSFetchRequest<CartItem> = CartItem.fetchRequest()
-     let objects = try! context.fetch(fetchRequest)
-     return objects
-     }
-     
-     //MARK: = Public
-     //MARK: - Put
-     public func putNewOrder(_ product: Product) {
-     switch product {
-     case is BagModel:
-     let bag = product as! BagModel
-     product.name = "Комплект: эко-сумка + набор красок, кисти"
-     product.productImageName = bag.fullBag
-     product.description = "Цвет: \"\(bag.bagColor)\"\nПринт: \"\(bag.bagImage)\""
-     product.price = bag.bagColor == "Milk" ? 550 : 600
-     
-     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-     let context = appDelegate.persistentContainer.viewContext
-     guard let entity = NSEntityDescription.entity(forEntityName: String(describing: CartItem.self), in: context) else { return }
-     let cartItem = NSManagedObject(entity: entity,
-     insertInto: context)
-     cartItem.setValue(product.name, forKey: "itemName")
-     cartItem.setValue(product.productImageName, forKey: "itemImageName")
-     cartItem.setValue(product.description, forKey: "itemDescription")
-     cartItem.setValue(product.price, forKey: "itemPrice")
-     appDelegate.saveContext()
-     
-     
-     
-     default: break
-     }
-     NotificationCenter.default.post(name: .CartOrdersArrayChanged, object: nil)
-     }
-     //MARK: - Get
-     public func getOrdersArrayCount() -> Int {
-     getObjectsFromContext().count
-     }
-     public func getOrder(at index: Int) -> Product {
-     let objects = getObjectsFromContext()
-     let cartItem = objects[index]
-     let product = Product(name: cartItem.itemName ?? "",
-     productImageName: cartItem.itemImageName ?? "",
-     description: cartItem.itemDescription ?? "",
-     price: Int(cartItem.itemPrice))
-     return product
-     }
-     //MARK: - Remove
-     public func removeOrder(at index: Int) {
-     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-     let context = appDelegate.persistentContainer.viewContext
-     let fetchRequest: NSFetchRequest<CartItem> = CartItem.fetchRequest()
-     let objects = try! context.fetch(fetchRequest)
-     context.delete(objects[index])
-     appDelegate.saveContext()
-     
-     NotificationCenter.default.post(name: .CartOrdersArrayChanged, object: nil)
-     }
-     */
 }
+
 //MARK: - Notification extension -
 extension Notification.Name {
     static let CartOrdersArrayChanged = NSNotification.Name("CartOrdersArrayChanged")

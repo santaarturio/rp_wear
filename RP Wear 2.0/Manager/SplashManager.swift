@@ -5,7 +5,6 @@
 //  Created by Macbook Pro  on 08.12.2020.
 //
 
-import Foundation
 import TinyConstraints
 import UIKit
 
