@@ -6,6 +6,7 @@ public enum PresentationMode {
 }
 
 class ANImageBagCreatorViewController: DefaultViewController {
+    
     public let dataSource = ANImageBagCreatorVcDataSource()
     private let cellIdentifier = String(describing: ANImageBagCreatorCollectionViewCell.self)
     private let draggedView = UIImageView()

@@ -8,6 +8,7 @@
 import UIKit
 
 class ANResultViewController: DefaultViewController {
+    
     public let dataSource = ANResultVcDataSource()
     private let cellIdentifier = String(describing: ANResultCollectionViewCell.self)
     private var tappedCell = ANResultCollectionViewCell()
